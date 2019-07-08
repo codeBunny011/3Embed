@@ -13,4 +13,4 @@ db.createUser(
 	user: "root_DB",
 	pwd: "sussitDev",
 	roles: [ { role: "dbAdmin", db: "sussitDev" }, { role: "readWrite", db: "sussitDev" } ]
-  }
+  });
