@@ -10,12 +10,11 @@ db.createUser(
 	roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
   }
 );
-use saveTM
-db.test.insert( { item: "test", qty: 15 } )
+use sussitDev
+db.sussitDev.insert( { item: "test", qty: 15 } )
 db.createUser(
   {
 	user: "root_DB",
-	pwd: "LkqbVNMZ9hxxBehG",
-	roles: [ { role: "dbAdmin", db: "saveTM" }, { role: "readWrite", db: "saveTM" } ]
+	pwd: "sussitDev",
+	roles: [ { role: "dbAdmin", db: "sussitDev" }, { role: "readWrite", db: "sussitDev" } ]
   }
-);
